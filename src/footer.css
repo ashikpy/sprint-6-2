@@ -1,0 +1,13 @@
+.footer-contact-grid {
+  width: 100%;
+  display: flex;
+  margin-top: -2rem;
+  gap: 5rem;
+}
+
+@media (width < 511px) {
+  .footer-contact-grid {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

@@ -83,11 +83,6 @@ const Products = () => {
               maxWidth: 1200,
             }}
           >
-            {/* 
-            The products are dynamically rendered using the .map() function.
-            This allows us to display each product from our productData array
-            as a consistent card layout without duplicating code.
-          */}
             {products.map((product) => (
               <Grid
                 item
@@ -124,6 +119,7 @@ const Products = () => {
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
+                      width: "100%",
                       background: `linear-gradient(135deg, 
                       ${
                         product.id % 2 === 0
